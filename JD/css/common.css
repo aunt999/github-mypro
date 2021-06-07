@@ -1,0 +1,25 @@
+/* 存放公用CSS */
+body{
+    font-size: 14px;
+    background: #f4f4f4;
+}
+
+@font-face {
+    font-family: "iconfont"; /* Project id  */
+    src: url('./font/iconfont.ttf?t=1620441961646') format('truetype');
+  }
+  
+  .iconfont {
+    font-family: "iconfont" !important;
+    font-size: 16px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  .clearfix:after{
+      content: "";
+      clear: both;
+      display: block;
+      height: 0px;
+  }

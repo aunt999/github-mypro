@@ -1,0 +1,351 @@
+/* 首页独特的样式CSS存放 */
+.nav{
+    height: 30px;
+    background: #e3e4e5;
+    border-bottom: 1px solid #ddd;
+}
+
+.nav-box{
+    /* 以下的代码表示让DIV居中 */
+    margin: 0px auto;
+    width: 1190px;
+    text-align: right;
+}
+
+.nav-box ul li{
+    display: inline-block;
+    padding: 0px 10px;
+    font-size: 12px;
+    height: 30px;
+    line-height: 30px;
+    position: relative;
+
+}
+
+.nav-box ul li a{
+    color: #999999;
+    text-decoration: none;
+}
+
+.nav-box ul li:not(:last-child)::after{
+    content: "";
+    width: 1px;
+    height: 15px;
+    background: #cccccc;
+    position: absolute;
+    top: 8px;
+    right: 0px;
+    display: block;
+}
+
+.nav-box ul li a:hover{
+    /* hover为鼠标移动上其上时出现的变化效果 */
+    color: #f10;
+}
+
+.header-box{
+    height: 140px;
+    background: #ffffff;
+}
+
+.header{
+    width: 1190px;
+    /* 容器布局 */
+    display: flex;
+    margin: 0px auto;
+    padding: 10px 0px;
+}
+
+.header .logo-box{
+    width: 190px;
+    height: 120px;
+}
+
+.header .search-box{
+    width: 790px;
+    padding: 0px 10px;
+}
+
+.header .search-bar{
+  padding: 10px 0px 0px 50px;
+  display: flex;
+}
+
+.search-bar input{
+    border: 2px solid #e1251b;
+    width: 500px;
+    height: 28px;
+    padding:2px 10px;
+    /* 焦点颜色框取消 */
+    outline: none;
+}
+
+.search-bar .search-btn{
+    width: 50px;
+    height: 36px;
+    border: 1px solid #e1251b;
+    background: #e1251b;
+    /* cursor控制鼠标样式，当鼠标聚焦时变成手形 */
+    cursor: pointer;
+    line-height: 36px;
+    text-align: center;
+
+}
+
+.search-bar .iconfont-search{
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.search-bar .cart-btn{
+    margin: 0px 0px 0px 20px;
+    border: 1px solid #e3e4e5;
+    background-color: #fff;
+    width: 100px;
+    height: 36px;
+    line-height: 30px;
+    text-align: center;
+    color: #e1251b;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+
+.search-bar .iconfont-cart{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.search-bar .cart-btn:hover{
+    border-color: #e1251b;
+}
+
+.header .recommend{
+    font-size: 12px;
+    padding: 5px 0px 25px 50px ;
+}
+
+.header .recommend a{
+    color: #999999;
+}
+
+.search-box ul li{
+    display: inline-block;
+    padding: 0px 10px;
+}
+
+.search-box ul li a{
+    color: #333333;
+    text-decoration: none;
+}
+
+.header .ad-box{
+    width: 190px;
+    height: 120px;
+}
+
+.content .wrapper{
+    margin: 0px auto;
+    width: 1190px;
+    padding: 10px;
+    display: flex;
+}
+
+.menu-box{
+    width: 190px;
+    background: #fefefe;
+    position: relative;
+    padding: 10px 0px;
+    margin-right: 10px;
+}
+
+.menu-box ul li{
+    height: 25px;
+    line-height: 25px;
+    padding: 0px 12px;
+    overflow:hidden;
+}
+
+.menu-box ul li:hover{
+    background: #d9d9d9;
+}
+
+/* hover后跟class名表示鼠标操作后面状态如何，比如下面为显示块 */
+/* .menu-box ul li:hover .sub-menu{
+    display: block;
+} */
+
+.menu-box ul li .active {
+     display: block;
+}
+
+.menu-box ul li a{
+    color: #333333;
+    text-decoration: none;
+}
+
+.menu-box ul li a:hover{
+    color: #e1251b;
+}
+
+.menu-box .sub-menu{
+    position: absolute;
+    top: 0px;
+    left: 170px;
+    background: #ffffff;
+    z-index: 10;
+    width: 900px;
+    padding: 20px;
+    font-size: 12px;
+    /* 添加阴影，具体作用后面另学？ */
+    box-shadow: 2px 0px 5px rgba(0,0,0,0.3);
+    display: none;
+}
+
+
+
+.sub-menu .left-box{
+    float: left;
+    max-width: 700px;
+}
+
+.sub-menu .right-box{
+    float: right;
+    width: 160px;
+}
+
+.sub-menu .menu-title{
+    margin: 0px 0px 10px 0px;
+}
+
+.sub-menu .menu-title .item{
+    display: inline-block;
+    background: #333333;
+    padding: 0px 8px;
+    margin: 0px 10px 0px 0px;
+    color: #ffffff;
+}
+
+.sub-menu .menu-title .item:hover{
+    background: #e1251b;
+}
+
+.sub-menu dl{
+    display: flex;
+}
+
+.sub-menu dt{
+    font-weight: bold;
+    width: 70px;
+    text-align: right;
+    /* 弹性布局dt部分不压缩，当flex-shrink=0时，此项不压缩，=1时等比全部压缩 */
+    flex-shrink: 0;
+}
+
+.sub-menu dd a{
+    padding: 4px 8px 4px 8px;
+
+}
+
+.sub-menu .right-box{
+    float: right;
+    width: 168px;
+
+}
+
+.sub-menu .pic-box{
+    margin: 0px 0px 10px 0px;
+
+}
+
+.sub-menu .pic-box:last-child{
+    margin: 0px;
+}
+
+.slider-box{
+    margin-right: 10px;
+}
+
+.slider-box .slider{
+    width: 590px;
+    height: 470px;
+    position: relative;
+    /* 不能超出位置 */
+    overflow: hidden;
+}
+
+.slider-box .slider ul{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 500%;
+    height: 100%;
+}
+
+.slider-box .slider ul li{
+    float: left;
+}
+
+.slider-box .slider .left-box{
+    background: rgba(0,0,0,0.2);
+    position: absolute;
+    top: 45%;
+    left: 0px;
+    width: 50px;
+    height: 50px;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.slider-box .right-box{
+    background: rgba(0,0,0,0.2);
+    position: absolute;
+    top: 45%;
+    right: 0px;
+    width: 50px;
+    height: 50px;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.slider-box .left-box, .slider-box .right-box span{
+    font-size: 24px;
+
+}
+
+.slider-box .index-box{
+    position: absolute;
+    bottom: 3%;
+    left: 10%;
+
+}
+
+.slider-box .index-box>ol{
+    /* >表示直接子元素 */
+    height: 14px;
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    background: rgba(0,0,0,0.6);
+
+}
+
+.slider-box .index-box>ol>li{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #ffffff;
+    list-style: none;
+    cursor: pointer;
+}
+
+.slider-box .index-box>ol>li.active{
+    background: #e1251b;
+}

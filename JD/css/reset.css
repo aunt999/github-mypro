@@ -1,0 +1,15 @@
+/* 解决不同浏览器不同属性的CSS，解决不同浏览器兼容性CSS，首先被引用 */
+/* 使用Normalize.css框架可以初始化浏览器的标签属性 */
+html,body,ul,ol,li{
+    margin: 0px;
+    padding: 0px;
+}
+
+li{
+    list-style: none;
+}
+
+dl,dt,dd{
+    margin: 0px;
+    padding: 0px;
+}
