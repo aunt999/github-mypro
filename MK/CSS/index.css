@@ -1,0 +1,267 @@
+.top{
+    width: 100%;
+    height: 27px;
+    background:url(../images/top_bg.jpg);
+}
+
+.top-content{
+    width: 1000px;
+    height: 27px;
+    margin: 0 auto;
+}
+
+.top-content li{
+    list-style-image: url(../images/li_bg.gif);
+    /* 去掉li的前面小点 */
+    list-style: none;
+    float: right;
+    /* padding: 5px; */
+    width: 70px;
+    /* 若想文字垂直居中，需要把line-height设置为跟height相同的高度 */
+    /* line-height: 27px; */
+}
+
+/* a:link a的初始状态   a:visited   访问之后的状态   */
+.top-content a{
+    text-decoration: none;
+}
+
+/* a:hover鼠标经过状态  a:active鼠标点击的状态 */
+.top-content a:hover,.top-content a:active{
+    color: #900;
+    text-decoration: none;
+
+}
+
+.wrap{
+    width: 1000px;
+    margin: 0 auto;
+}
+
+ .logo{
+    height: 80px;
+    background-color:white;
+}
+
+ .logo-left{
+    width: 375px;
+    float: left;
+    display: inline;
+}
+
+.logo-right{
+    width: 300px;
+    float: right;
+    height: 28px;
+    margin-top: 30px;
+    color: #8e8e8e;
+    display: inline;
+}
+
+.logo-right img{
+    vertical-align: middle;
+    margin-right:10px;
+}
+
+.tel{
+    font-family:serif;
+    font-size: 16px;
+    color: red;
+
+}
+
+.nav{
+    /* 因为前面的float对后面即当前div有影响，所以需要清除前面float的影响，clear:both */
+    clear: both;
+    height: 40px;
+}
+
+.nav-left{
+    width: 10px;
+    height: 40px;
+    background:url(../images/nav_left.jpg) no-repeat;
+    float:left;
+}
+
+.nav-mid{
+    width: 980px;
+    height: 40px;
+    background: url(../images/nav_bg.jpg) repeat-x;
+    float: left;
+    
+
+}
+
+.nav-right{
+    width: 10px;
+    height: 40px;
+    background: url(../images/nav_right.jpg) no-repeat;
+    float: left;
+}
+
+
+
+.nav-mid-left{
+    width: 680px;
+    line-height: 40px;
+
+}
+
+.nav-mid-right{
+    width: 300px;
+
+}
+
+.nav-mid-left li{
+    float: left;
+    list-style-type: none;
+    width: 100px;
+    text-align: center;
+    font-family: initial;
+    font-size: 12px;
+
+}
+
+.nav-mid-left a:link,.nav-mid-left a:visited{
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    font-family:fantasy;
+
+}
+
+.nav-mid-left a:hover,.nav-mid-left a:active{
+    text-decoration: none;
+    color: rgb(154, 175, 33);
+    font-size: 16px;
+    font-family:fantasy;
+    
+}
+
+
+.nav-mid-left,.nav-mid-right{
+    float: left;
+}
+
+.search-text{
+    width: 190px;
+    height: 25px;
+    margin-top: 7px;
+    background: url(../images/search.jpg) no-repeat right center;
+    background-color: #fff;
+    border: 1px solid #fff;
+    padding-right: 25px;
+
+}
+
+.ad{
+    
+    height: 322px;
+    margin-top: 5px;
+}
+
+.main{
+    height: 250px;
+    background-color:#fff;   
+    margin-top: 5px; 
+}
+
+.news{
+    width: 340px;
+    border: 1px solid #e8e8e8;
+
+
+}
+
+.course{
+    width: 410px;
+    border: 1px solid #e8e8e8;
+    margin: 0 7px;
+}
+
+.sidebar{
+    width: 230px;
+}
+
+.news,.course,.sidebar{
+    height: 250px;
+    float: left;
+}
+
+.title{
+    height: 35px;
+    border-bottom: 2px solid #e8e8e8;
+}
+
+.title-left{
+    width: 70%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    color: #786f66;
+    float: left;
+    line-height: 35px;
+    padding-left: 20px;
+}
+
+.title-right{
+    /* 此处宽不能在上面的70%基础上直接设置30%，因为上面padding-left：20px,需要扣除掉, 因为这不在70%内包含*/
+    width:20%;
+    line-height: 35px;
+}
+
+.title-right a{
+    text-decoration: none;
+    color: #786f66;
+}
+
+.pic-news{
+    height: 80px;
+    margin-top: 10px;
+    line-height: 22px;
+}
+
+.pic-news img{
+    float: left;
+    margin: 0 5px;
+}
+
+.pic-news h2{
+    height: 22px;
+    color: #c00;
+}
+
+.pic-news a{
+    text-decoration: none;
+    color: #c00;
+}
+
+.news-list{
+    height: 96px;
+    float: left;
+    margin-top: 10px;
+}
+
+.news-list ul li{
+    list-style-type: none;
+    margin: 8px;
+    background: url(../images/list.jpg) no-repeat;
+    padding-left: 10px;
+    height: 17px;
+    line-height: 17px;
+    border-bottom: 1px dotted #ccc;
+
+}   
+
+.news-list span{
+    float: right;
+    color: #999;
+}
+
+
+
+.news-list a:link,.news-list a:visited{
+    text-decoration: none;
+    color: #000;
+    
+}
