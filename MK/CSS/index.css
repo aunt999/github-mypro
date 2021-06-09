@@ -208,6 +208,9 @@
     /* 此处宽不能在上面的70%基础上直接设置30%，因为上面padding-left：20px,需要扣除掉, 因为这不在70%内包含*/
     width:20%;
     line-height: 35px;
+    text-align: right;
+    float: right;
+
 }
 
 .title-right a{
@@ -221,7 +224,7 @@
     line-height: 22px;
 }
 
-.pic-news img{
+.pic-news img,.course-pic img{
     float: left;
     margin: 0 5px;
 }
@@ -231,10 +234,11 @@
     color: #c00;
 }
 
-.pic-news a{
+.pic-news a,.course-pic a{
     text-decoration: none;
     color: #c00;
 }
+
 
 .news-list{
     height: 96px;
@@ -250,6 +254,9 @@
     height: 17px;
     line-height: 17px;
     border-bottom: 1px dotted #ccc;
+    white-space:nowrap; /*不让文字内容换行*/
+    overflow:hidden;/*文字溢出的部分隐藏起来*/
+    text-overflow:ellipsis; /*用...替代溢出的部分*/
 
 }   
 
@@ -264,4 +271,33 @@
     text-decoration: none;
     color: #000;
     
+}
+
+.course-pic{
+    height: 120px;
+    margin-top: 10px;
+    line-height: 22px;
+    
+}
+
+.product-type{
+    height: 37px;
+    width: 372px;
+    background: url(../images/product_type_bg.jpg) no-repeat;
+    margin: 20px auto;
+}
+
+.product-type ul li{
+    list-style-type: none;
+    float: left;
+    margin: 0 15px;
+    line-height: 37px;
+    text-align: center;
+    font-family:Arial, Helvetica, sans-serif;
+   
+}
+
+.video,.sidebar-ad{
+    text-align: center;
+    border: 1px solid #e8e8e8;
 }
